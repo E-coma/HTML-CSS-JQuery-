@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.menu {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* // 最後の要素以外に余白を追加 */
+.menu-box:not(:last-child){
+  margin-bottom: 50px;
+}
+
+/* // 反対バージョンを作る場合はoddをevenに変更する */
+.menu-box:nth-child(odd){
+  flex-direction: row-reverse;
+  text-align: center;
+}
+
+.menu-box:nth-child(even){
+    text-align: center;
+  }
+/* // 画像 */
+#menu-img {
+  width: 50%;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#menu-img img{
+  width:  61%;
+  min-width: 340px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* // テキスト */
+#menutextbox{
+  width: 50%;
+}
+
+#menutextbox h1 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+#menutextbox p{
+  line-height: 1.5;
+
+}
